@@ -1,0 +1,88 @@
+li{
+	list-style: none;
+}
+a{
+ 	text-decoration: none;
+}
+a:link{
+  background-color
+}
+a:visited{
+	color: lightblue;
+}
+a:hover{
+	background-color: purple;
+  border-style: solid;
+  font-size: 2em;
+  
+}
+a:focus{
+  color: red; 
+  font-size: 2em;
+}
+button{
+  font-familly: sans-serif;
+  color: red;
+  padding: 20px 10px;
+  border: none;
+  background-color: purple; 
+  transition: background .25s ease-in-out;
+}
+button:hover{
+  color: blue;
+  background-color: yellow;
+  
+
+}
+header{
+	font-weight: bold;
+	font-size: 2em;
+}
+input{
+  font-familly: sans-serif;
+  color: blue;
+  padding: 10px;
+  border:none;
+}
+input:hover{
+  background-color: black;
+  color: red;
+  transition: background .25s ease;
+}
+figure{
+	padding: 200px 150px;
+	background-color: lightgray;
+	border-bottom: solid 2px;
+	margin:auto;
+}
+article{
+	font-family: source sans Pro Regular;
+	font-size: 16px;
+}
+li{
+	float: left;
+	display: inline;
+}
+[type="search"]{
+  background-color: hotpink;
+  color: white;
+}
+[type="search"]:hover{
+  background-color: red;
+}
+
+.navBoven{
+clear: both;
+position: fixed;
+width: 85%;
+background-color: #78AB46;
+top: 5px;
+}
+.filtersAp{
+	display: ;
+}
+.navBeschrijving{
+	font-weight: bold;
+}
+
+	
