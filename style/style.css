@@ -1,3 +1,6 @@
+body{
+	background-color: #f5f5f5;
+}
 li{
 	list-style: none;
 }
@@ -12,9 +15,7 @@ a:visited{
 }
 a:hover{
 	background-color: purple;
-  border-style: solid;
-  font-size: 2em;
-  
+  	border-style: solid;
 }
 a:focus{
   color: red; 
@@ -22,17 +23,15 @@ a:focus{
 }
 button{
   font-familly: sans-serif;
-  color: red;
+  color: #09477e;
   padding: 20px 10px;
   border: none;
-  background-color: purple; 
+  background-color: #f5f4f4; 
   transition: background .25s ease-in-out;
 }
 button:hover{
-  color: blue;
-  background-color: yellow;
-  
-
+  color: #09477e;
+  background-color: #d5edfb;
 }
 header{
 	font-weight: bold;
@@ -50,9 +49,14 @@ input:hover{
   transition: background .25s ease;
 }
 figure{
+	max-height: 500px;
+	max-width: 300px; 
 	padding: 200px 150px;
-	background-color: lightgray;
-	border-bottom: solid 2px;
+	background-color: white;
+	/*Bron:https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow*/
+	/* offset-x | offset-y | blur-radius | spread-radius | color */
+	box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
 	margin:auto;
 }
 article{
@@ -64,7 +68,7 @@ li{
 	display: inline;
 }
 h1{
-	font-family: Open sans;
+	font-family: Open Sans;
 	font-size: 32px;
 }
 [type="search"]{
@@ -83,7 +87,7 @@ background-color: #78AB46;
 top: 5px;
 }
 .filtersAp{
-	display: ;
+	display:none;
 }
 .navBeschrijving{
 	font-weight: bold;
