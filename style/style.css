@@ -1,12 +1,8 @@
-/*flex box bron: https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
-@font-face {
-  font-family: "NotoSans";
-  src: url(".../fonts/NotoSansSC-Regular.otf") format("opentype");
-}
 body{
 	background-color: #f5f5f5;
 }
 li{
+	display: block;
 	list-style: none;
 }
 a{
@@ -25,36 +21,32 @@ a:hover{
 a:focus{
  
 }
-button{		
+button{	
+	width: 100%;
+	margin: 0;	
   	font-family: source sans Pro Regular;
-  	color: #09477e;
+  	font-size: 3.5rem;
+  	color: white;
   	padding: 20px 10px;
   	border: none;
-  	background-color: #f5f4f4; 
+  	background-color: #3e3639; 
   	transition: background .25s ease-in-out;
 }
 button:hover{
-
   color: #09477e;
   background-color: #d5edfb;
 }
 header{
-	padding: 75px;
+	display: flex;
+	font-size: 2em;
+	padding: 50px;
 	text-align: center; 
 	font-family: source sans Pro Regular;
 	font-weight: bold;
-	font-size: 1em;
+	justify-content: space-around;
 }
-input{
-  font-familly: sans-serif;
-  color: blue;
-  padding: 10px;
-  border:none;
-}
-input:hover{
-  background-color: black;
-  color: red;
-  transition: background .25s ease;
+header span{
+	
 }
 article{
 	padding: 50px 200px 50px 200px;
@@ -63,8 +55,7 @@ article{
 	/* offset-x | offset-y | blur-radius | spread-radius | color */
 	box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.2);
 	border-radius: 2px;
-	margin:auto;
-	
+	margin:auto;	
 }
 p{
 	font-family: source sans Pro Regular, sans-serif;
@@ -75,6 +66,7 @@ h1{
 	font-size: 2rem;
 }
 figure{
+	border-radius:10px;
 	margin:0px;
 	padding: 0px;
 	height: 300px;
@@ -84,18 +76,12 @@ figure{
 }
 .navBoven{
 	margin: 0;
-	padding: 2em;
+	padding: 0;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	background-color: white;
 }
-#zoekKnop{
-	background-color: #e52231;
-	height: 50px;
-	width: 50px;
-	border-radius: 50px;
-}
-[type="submit"]{
+input[type="submit"]{
 	font-family: source sans Pro Regular;
   color: #09477e;
   padding: 20px 10px;
@@ -103,27 +89,56 @@ figure{
   background-color: #f5f4f4; 
   transition: background .25s ease-in-out;
 }
-[type="submit"]:hover{
+input[type="submit"]:hover{
 	color: #09477e;
   	background-color: #d5edfb;
 }
-[type="search"]{
+input[type="search"]{
 	font-family: source sans Pro Regular;
   	background-color: white;
   	color: white;
 }
-[type="search"]:hover{
+input[type="search"]:hover{
   background-color: red;
 }
-.filtersAp{
-	display: none;
+label{
+	font-family: source sans Pro Regular;
+  	font-size: 2em;
+  	color: #09477e;
+  	border: none;
+  	background-color: #f5f4f4; 
+  	transition: background .25s ease-in-out;
+  	justify-content: baseline;
+}
+:checked + span{
+	font-weight: bold;
+}
+label:hover{
+  color: #09477e;
+  background-color: #d5edfb;
 }
 .navBeschrijving{
 	font-weight: bold;
 }
-.BewaarKnop{
-	
+#BewaarKnop{
+	justify-content: flex-end;
 }
 #zoekBalk{
 	display: none;
+}
+#sideBarMenu{
+	font-family: sourcs sans Pro Regular;
+
+}
+#zoekKnop{
+	background-color: #e52231;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+}
+#terugTop{
+	width: 100%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
 }
