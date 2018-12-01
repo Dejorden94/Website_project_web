@@ -8,22 +8,9 @@ li{
 a{
  	text-decoration: none;
 }
-a:link{
- 
-}
-a:visited{
-	color: lightblue;
-}
-a:hover{
-	background-color: purple;
-  	border-style: solid;
-}
-a:focus{
- 
-}
 button{	
-	width: 100%;
-	margin: 0;	
+	width: 325px;
+	height: 200px;	
   	font-family: source sans Pro Regular;
   	font-size: 3.5rem;
   	color: white;
@@ -36,20 +23,25 @@ button:hover{
   color: #09477e;
   background-color: #d5edfb;
 }
+#logIn{
+	margin: 0;
+	background-color: #f5f5f5;
+}
 header{
 	display: flex;
 	font-size: 2em;
-	padding: 50px;
+	padding: 100px 50px 20px 50px;
 	text-align: center; 
 	font-family: source sans Pro Regular;
 	font-weight: bold;
-	justify-content: space-around;
+	justify-content: space-between;
 }
-header span{
-	
+header:first-child{
+	font-size: 3rem;
+	margin-left: 300px;
 }
 article{
-	padding: 50px 200px 50px 200px;
+	padding: 0px 200px 50px 200px;
 	background-color: white;
 	/*Bron:https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow*/
 	/* offset-x | offset-y | blur-radius | spread-radius | color */
@@ -58,12 +50,14 @@ article{
 	margin:auto;	
 }
 p{
+	color:#b5cedf; 
 	font-family: source sans Pro Regular, sans-serif;
-	font-size: 1em;
+	font-size: 3rem;
 }
 h1{
+	color: #064781;
 	font-family: source sans Pro Regular, sans-serif;
-	font-size: 2rem;
+	font-size: 4rem;
 }
 figure{
 	border-radius:10px;
@@ -78,10 +72,10 @@ figure{
 	margin: 0;
 	padding: 0;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	background-color: white;
 }
-input[type="submit"]{
+input[type="submit"] {
 	font-family: source sans Pro Regular;
   color: #09477e;
   padding: 20px 10px;
@@ -89,7 +83,7 @@ input[type="submit"]{
   background-color: #f5f4f4; 
   transition: background .25s ease-in-out;
 }
-input[type="submit"]:hover{
+input[type="submit"]:hover {
 	color: #09477e;
   	background-color: #d5edfb;
 }
@@ -101,27 +95,49 @@ input[type="search"]{
 input[type="search"]:hover{
   background-color: red;
 }
-label{
+input[type="checkbox"]{
+  display: none;
+}
+label {
 	font-family: source sans Pro Regular;
-  	font-size: 2em;
+  	font-size: 2rem;
   	color: #09477e;
   	border: none;
   	background-color: #f5f4f4; 
   	transition: background .25s ease-in-out;
   	justify-content: baseline;
 }
-:checked + span{
-	font-weight: bold;
-}
-label:hover{
+label:hover {
   color: #09477e;
   background-color: #d5edfb;
+}
+li{
+	font-family: source sans Pro Regular;
+  	font-size: 2rem;
+  	color: #09477e;
+  	border: none;
+  	background-color: #f5f4f4; 
+  	transition: background .25s ease-in-out;
+  	justify-content: baseline;
+}
+a:visited{
+	color: #09477e;
 }
 .navBeschrijving{
 	font-weight: bold;
 }
 #BewaarKnop{
-	justify-content: flex-end;
+	float: right;
+	position: relative;
+	height: 120px;
+	margin-top: 0;
+	background-color: #e51c31;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    border-bottom: 40px solid white;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
 }
 #zoekBalk{
 	display: none;
@@ -137,8 +153,8 @@ label:hover{
 	border-radius: 50px;
 }
 #terugTop{
-	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
   	display: flex;
-  	align-items: center;
-  	justify-content: center;
 }
